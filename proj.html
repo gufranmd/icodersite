@@ -99,6 +99,31 @@
     opacity: 1;
     transition: all 0.3s;
   }
+    .red{
+    height: 10px;
+    background-color: black;
+  }
+  .imag{
+    text-align: end;
+    background-color: black;
+    padding: 30px 40px;
+  }
+  .imag img{
+    border-radius: 60px;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    border: 1px solid black;
+    
+    
+    
+  }
+  @keyframes move {
+    from{transform: scaleX(1);}
+    to{transform: scaleX(-1);}
+    
+  }
 </style>
 
 
@@ -152,6 +177,10 @@
       </div>
     </div>
   </nav>
+   <div class="red"></div>
+  <div class="imag">
+    <img src="IMG_20210214_210857_689.jpg" width="120px" alt="error">
+  </div>
   <!-- Button trigger modal -->
 
   <!-- Modal -->
