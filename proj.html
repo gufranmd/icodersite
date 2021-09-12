@@ -229,10 +229,10 @@
           <form action="#">
             <div class="error-text">Confirm Password Not Matched</div>
             <div class="field">
-              <input type="text" placeholder="enter name" name="" id="">
+              <input type="text" placeholder="enter name" name="" id="name1">
             </div>
             <div class="field">
-              <input type="email" placeholder="enter gmail" name="" id="">
+              <input type="email" placeholder="gmail" name="" id="">
             </div>
             <div class="field">
               <input onkeyup="active()" type="password" placeholder="enter password" name="" id="pswrd_1">
@@ -601,6 +601,7 @@
     -->
 </body>
 <script>
+  const name1 = document.querySelector("name1");
   const pswrd_1 = document.querySelector("#pswrd_1");
   const pswrd_2 = document.querySelector("#pswrd_2");
   const errorText = document.querySelector(".error-text");
@@ -621,7 +622,7 @@
       return false;
     } else {
       errorText.style.display = "block";
-      errorText.textContent = "Nice! confirm password Matched"
+      errorText.textContent = "Gufran loves "+name1.value;
       errorText.style.background = "#95ecb9";
       errorText.style.color = "#057735";
       return false;
